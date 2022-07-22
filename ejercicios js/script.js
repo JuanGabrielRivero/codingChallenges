@@ -76,3 +76,50 @@ const language = "Spanish";
 const description = `${country} is in ${continent} and it's ${population} million people, 20% does not speak ${language}`;
 
  console.log(description); */
+
+
+//  LECTURE: Taking Decisions: if / else Statements
+// 1. If your country's population is greater that 33 million, log a string like this to the
+// console: 'Portugal's population is above average'. Otherwise, log a string like
+// 'Portugal's population is 22 million below average' (the 22 is the average of 33
+// minus the country's population)
+// 2. After checking the result, change the population temporarily to 13 and then to
+// 130. See the different results, and set the population back to original
+
+/*
+const population = 47;
+const country = "Spain";
+
+if(population > 33){
+    console.log(`${country} is ${population - 33} million pople above the average`);
+}else{
+    console.log(`${country}'s population is ${33 - population} million below average`);
+}
+*/
+// LECTURE: Type Conversion and Coercion
+// 1. Predict the result of these 5 operations without executing them:
+// '9' - '5';
+// '19' - '13' + '17';
+// '19' - '13' + 17;
+// '123' < 57;
+// 5 + 6 + '4' + 9 - 4 - 2;
+// 2. Execute the operations to check if you were right
+
+//1º
+4
+console.log("9" - "5");
+
+617
+
+console.log('19' - '13' + '17');
+
+617
+
+console.log('19' - '13' + 17); 23
+
+false
+
+console.log('123' < 57);
+
+1143
+console.log (5 + 6 + '4' + 9 - 4 - 2);

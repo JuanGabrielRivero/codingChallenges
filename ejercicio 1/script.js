@@ -29,7 +29,7 @@ const bmiJhon = massJhon / (heightJhon * heightJhon);
 
 const markHigerBMI = bmiMark > bmiJhon;
 
-console.log(bmiMark, bmiJhon, markHigerBMI);
+console.log(bmiMark.toFixed(2), bmiJhon.toFixed(2), markHigerBMI);
 */
 
 /* DATA 2
@@ -45,5 +45,6 @@ const bmiJhon = massJhon / heightJhon ** 2;
 
 const markHigerBMI = bmiMark > bmiJhon;
 
-console.log(bmiMark, bmiJhon, markHigerBMI);
+console.log(bmiMark.toFixed(2), bmiJhon.toFixed(2), markHigerBMI);
 */
+
