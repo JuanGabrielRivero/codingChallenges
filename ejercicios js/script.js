@@ -1,13 +1,14 @@
-Ejercicios
+// Ejercicios
 
 // LECTURE: Values and Variables
 // 1. Declare variables called 'country', 'continent' and 'population' and
 // assign their values according to your own country (population in millions)
 // 2. Log their values to the console
 
-// let country = "Spain";
-// let continent = "Europe";
-// let population = 47;
+
+/* let country = "Spain";
+ let continent = "Europe";
+ let population = 47; */
 
 // LECTURE: Data Types
 // 1. Declare a variable called 'isIsland' and set its value according to your
@@ -16,13 +17,13 @@ Ejercicios
 // 2. Log the types of 'isIsland', 'population', 'country' and 'language'
 // to the console
 
-// let isIsland = false;
-// let language;
+ /* let isIsland = false;
+ let language;
 
-// console.log(typeof isIsland);
-// console.log(typeof population);
-// console.log(typeof country);
-// console.log(typeof language);
+ console.log(typeof isIsland);
+ console.log(typeof population);
+ console.log(typeof country);
+ console.log(typeof language); */
 
 // LECTURE: let, const and var
 // 1. Set the value of 'language' to the language spoken where you live (some
@@ -31,11 +32,11 @@ Ejercicios
 // change, and which might change?). Then, change these variables to const.
 // 3. Try to change one of the changed variables now, and observe what happens
 
-// language = "Spanish";
-// const country = "Spain";
-// const continent = "Europe";
-// const isIsland = false;
-// isIsland = true;
+/* language = "Spanish";
+ const country = "Spain";
+ const continent = "Europe";
+ const isIsland = false;
+ isIsland = true; */
 
 
 // LECTURE: Basic Operators
@@ -50,12 +51,28 @@ Ejercicios
 // which contains a string with this format: 'Portugal is in Europe, and its 11 million
 // people speak portuguese'
 
-// console.log(population / 2);
-// population ++;
-// console.log(population);
-// console.log(population > 6);
-// console.log(population < 33 );
+ /* console.log(population / 2);
+ population ++;
+ console.log(population);
+ console.log(population > 6);
+ console.log(population < 33 );
 
-// const description1 = country + " is in " + continent + " , and it's" + " " + population + "million people does not speak"+ " " + language;
+ const description1 = country + " is in " + continent + " , and it's" + " " + population + "million people, 20% does not speak"+ " " + language;
 
-// console.log(description1);
+ console.log(description1); */
+
+
+
+// LECTURE: Strings and Template Literals
+//  1. Recreate the 'description' variable from the last assignment, this time
+//  using the template literal syntax
+
+/* const country = "Spain";
+const continent = "Europe"
+const population = 47;
+const language = "Spanish";
+
+
+const description = `${country} is in ${continent} and it's ${population} million people, 20% does not speak ${language}`;
+
+ console.log(description); */
