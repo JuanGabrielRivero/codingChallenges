@@ -164,3 +164,82 @@ if(population > 33){
 // }else{
 //     console.log("No borders");
 // }
+
+// -----------------------------------EJERCICIO 9-----------------------------------------------------
+
+// LECTURE: Logical Operators
+// 1. Comment out the previous code so the prompt doesn't get in the way
+// 2. Let's say Sarah is looking for a new country to live in. She wants to live in a
+// country that speaks english, has less than 50 million people and is not an
+// island.
+// 3. Write an if statement to help Sarah figure out if your country is right for her.
+// You will need to write a condition that accounts for all of Sarah's criteria. Take
+// your time with this, and check part of the solution if necessary.
+// 4. If yours is the right country, log a string like this: 'You should live in Portugal :)'. If
+// not, log 'Portugal does not meet your criteria :('
+// 5. Probably your country does not meet all the criteria. So go back and temporarily
+// change some variables in order to make the condition true (unless you live in
+// Canada :D)
+
+
+
+
+// const language = "Spanish";
+// const population = 47;
+// const isIsland = false;
+// const country = "Spain";
+
+
+
+
+// const language = "english";
+// const population = "10";
+// const isIsland = false;
+// const country = "portugal";
+
+
+
+
+// if (language === 'english' && population < 50 && !isIsland)
+// {
+// console.log(`You should live in ${country} :)`);
+// } else {
+// console.log(`${country} does not meet your criteria :(`);
+// }
+
+
+
+// --------------------------------------EJERCICIO 10----------------------------------------------------
+
+// LECTURE: The switch Statement
+// 1. Use a switch statement to log the following string for the given 'language':
+// chinese or mandarin: 'MOST number of native speakers!'
+// spanish: '2nd place in number of native speakers'
+// english: '3rd place'
+// hindi: 'Number 4'
+// arabic: '5th most spoken language'
+// for all other simply log 'Great language too :D'
+
+
+
+const language = "mandarin";
+
+switch(language){
+    case "chinese" :
+    case "mandarin" :
+        console.log("Most number of native speakers!");
+            break;
+  case "spanish":
+        console.log("2nd place in number of native speakers");
+        break;
+    case "english":
+        console.log("3rd place");
+            break;
+    case "hindi":
+        console.log("number 4");
+            break;
+    case "arabic":
+        console.log("5th most spoken language");
+        default:
+        console.log("Great language too");
+    }
