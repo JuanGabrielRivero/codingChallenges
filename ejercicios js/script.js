@@ -222,24 +222,44 @@ if(population > 33){
 
 
 
-const language = "mandarin";
+// const language = "mandarin";
 
-switch(language){
-    case "chinese" :
-    case "mandarin" :
-        console.log("Most number of native speakers!");
-            break;
-  case "spanish":
-        console.log("2nd place in number of native speakers");
-        break;
-    case "english":
-        console.log("3rd place");
-            break;
-    case "hindi":
-        console.log("number 4");
-            break;
-    case "arabic":
-        console.log("5th most spoken language");
-        default:
-        console.log("Great language too");
-    }
+// switch(language){
+//     case "chinese" :
+//     case "mandarin" :
+//         console.log("Most number of native speakers!");
+//             break;
+//   case "spanish":
+//         console.log("2nd place in number of native speakers");
+//         break;
+//     case "english":
+//         console.log("3rd place");
+//             break;
+//     case "hindi":
+//         console.log("number 4");
+//             break;
+//     case "arabic":
+//         console.log("5th most spoken language");
+//         default:
+//         console.log("Great language too");
+//     }
+
+
+
+// --------------------------------------EJERCICIO 111----------------------------------------------------
+
+// LECTURE: The Conditional (Ternary) Operator
+// 1. If your country's population is greater than 33 million, use the ternary operator
+// to log a string like this to the console: 'Portugal's population is above average'.
+// Otherwise, simply log 'Portugal's population is below average'. Notice how only
+// one word changes between these two sentences!
+// 2. After checking the result, change the population temporarily to 13 and then to
+// 130. See the different results, and set the population back to original
+
+
+// let country = "Spain";
+// let population = 47;
+
+// console.log(`${country}'s population is ${population > 33 ? "above" : "below"} average `); // mas simplificado
+
+// population > 33 ? console.log(`${country}'s population is above average`) : console.log(`${country}'s population is below average`); //mismo resultado pero mas codigo
