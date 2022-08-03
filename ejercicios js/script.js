@@ -246,7 +246,7 @@ if(population > 33){
 
 
 
-// --------------------------------------EJERCICIO 111----------------------------------------------------
+// --------------------------------------EJERCICIO 11----------------------------------------------------
 
 // LECTURE: The Conditional (Ternary) Operator
 // 1. If your country's population is greater than 33 million, use the ternary operator
@@ -263,3 +263,125 @@ if(population > 33){
 // console.log(`${country}'s population is ${population > 33 ? "above" : "below"} average `); // mas simplificado
 
 // population > 33 ? console.log(`${country}'s population is above average`) : console.log(`${country}'s population is below average`); //mismo resultado pero mas codigo
+
+
+// -------------------------------------------EJERCICIO 12----------------------
+
+
+// LECTURE: Functions
+// 1. Write a function called 'describeCountry' which takes three parameters:
+// 'country', 'population' and 'capitalCity'. Based on this input, the
+// function returns a string with this format: 'Finland has 6 million people and its
+// capital city is Helsinki'
+// 2. Call this function 3 times, with input data for 3 different countries. Store the  returned values in 3 different variables, and log them to the console
+
+
+
+// function describeCountry(country, population, capitalCity){
+//     return `${country} has ${population} million people and its capital city is ${capitalCity}`;
+// }
+
+// const describe1 = describeCountry("Finnland", 6, "Helsinki")
+// const describe2 = describeCountry("Portugal", 21, "Lisboa")
+// const describe3 = describeCountry("Spain", 47, "Madrid")
+
+// console.log(describe1, "\n", describe2, "\n", describe3);
+
+
+
+// --------------------------------------------------------------------ejercicio 13-----------------------------------------------------
+
+
+// LECTURE: Function Declarations vs. Expressions
+// 1. The world population is 7900 million people. Create a function declaration
+// called 'percentageOfWorld1' which receives a 'population' value, and
+// returns the percentage of the world population that the given population
+// represents. For example, China has 1441 million people, so it's about 18.2% of
+// the world population
+// 2. To calculate the percentage, divide the given 'population' value by 7900
+// and then multiply by 100
+// 3. Call 'percentageOfWorld1' for 3 populations of countries of your choice,
+// store the results into variables, and log them to the console
+// 4. Create a function expression which does the exact same thing, called
+// 'percentageOfWorld2', and also call it with 3 country populations (can be
+// the same populations)
+
+
+// function percentageofWorld1(population){
+// return (population / 7900) * 100;
+// }
+
+
+// const percentageofWorld2 = function(population){
+//     return (population / 7900) * 100;
+// }
+
+
+
+// const populationSpain = percentageofWorld1(47);
+// const populationPortugal = percentageofWorld1(10);
+// const populationChina = percentageofWorld1(1441);
+// console.log(populationSpain.toFixed(2), populationPortugal.toFixed(2), populationChina.toFixed(2));
+
+// ---------------------------------------------ejercicio 14---------------------------------
+
+// LECTURE: Arrow Functions
+// 1. Recreate the last assignment, but this time create an arrow function called
+// 'percentageOfWorld3'
+
+
+
+// const percentageofWorld3 = population => (population / 7900) * 100;
+
+// const populationSpain = percentageofWorld3(47);
+// const populationPortugal = percentageofWorld3(10);
+// const populationChina = percentageofWorld3(1441);
+
+// console.log(populationSpain.toFixed(2), populationPortugal.toFixed(2), populationChina.toFixed(2));
+
+
+// -------------------------------------ejercicio 15-----------------------------------------
+
+// LECTURE: Functions Calling Other Functions
+// 1. Create a function called 'describePopulation'. Use the function type you
+// like the most. This function takes in two arguments: 'country' and
+// 'population', and returns a string like this: 'China has 1441 million people,
+// which is about 18.2% of the world.'
+// 2. To calculate the percentage, 'describePopulation' call the
+// 'percentageOfWorld1' you created earlier
+// 3. Call 'describePopulation' with data for 3 countries of your choice
+
+// function percentageOfPeople(population){
+//     return (population / 7900) * 100;
+//     }
+
+// function describePopulation (country, population){
+//     const populationChina = percentageOfPeople(1441);
+//         const result = `${country} has ${population} million people, which is about ${populationChina.toFixed(2)}% of the world. `
+//     return result;
+
+// }
+
+// console.log(describePopulation("China", 1441));
+// console.log(describePopulation("Portugal", 10));
+// console.log(describePopulation("Spain", 47));
+
+
+// // or
+
+
+// function percentageofWorld1(population){
+//     return (population / 7900) * 100;
+//     }
+
+
+// const describePopulation = function (country, population) {
+//     const percentage = percentageofWorld1(population);
+//     const description = `${country} has ${population} million
+//     people, which is about ${percentage}% of the world.`;
+//     console.log(description);
+//     };
+
+//     describePopulation('Portugal', 10);
+//     describePopulation('China', 1441);
+//     describePopulation('USA', 332);
