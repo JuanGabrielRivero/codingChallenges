@@ -26,8 +26,7 @@
 
 // Mi solución
 
-
-// const calcAverage = () =>{
+// const calcAverage = (score) =>{
 //      scoreDolphins = (44 + 23 + 71) / 3;
 //      scoreKoalas = (65 + 54 + 49) / 3;
 //      console.log(scoreDolphins, scoreKoalas);
@@ -46,6 +45,7 @@
 // }
 
 // checkWinner();
+
 
 
 // const calcAverage = result =>{
@@ -77,6 +77,7 @@
 
 
 //Solución del profesor
+'use strict';
 
 const calcAverage = (a , b , c) => (a + b + c) / 3;
 console.log(calcAverage(3, 4, 5));

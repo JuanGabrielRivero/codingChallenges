@@ -10,7 +10,7 @@
  let continent = "Europe";
  let population = 47; */
 
- // -------------------------------------------EJERCICIO 2------------------------------------------------------------------
+// -------------------------------------------EJERCICIO 2------------------------------------------------------------------
 
 // LECTURE: Data Types
 // 1. Declare a variable called 'isIsland' and set its value according to your
@@ -19,15 +19,15 @@
 // 2. Log the types of 'isIsland', 'population', 'country' and 'language'
 // to the console
 
- /* let isIsland = false;
- let language;
+/* let isIsland = false;
+let language;
 
- console.log(typeof isIsland);
- console.log(typeof population);
- console.log(typeof country);
- console.log(typeof language); */
+console.log(typeof isIsland);
+console.log(typeof population);
+console.log(typeof country);
+console.log(typeof language); */
 
- // -------------------------------------------EJERCICIO 3------------------------------------------------------------------
+// -------------------------------------------EJERCICIO 3------------------------------------------------------------------
 
 
 // LECTURE: let, const and var
@@ -58,15 +58,15 @@
 // which contains a string with this format: 'Portugal is in Europe, and its 11 million
 // people speak portuguese'
 
- /* console.log(population / 2);
- population ++;
- console.log(population);
- console.log(population > 6);
- console.log(population < 33 );
+/* console.log(population / 2);
+population ++;
+console.log(population);
+console.log(population > 6);
+console.log(population < 33 );
 
- const description1 = country + " is in " + continent + " , and it's" + " " + population + "million people, 20% does not speak"+ " " + language;
+const description1 = country + " is in " + continent + " , and it's" + " " + population + "million people, 20% does not speak"+ " " + language;
 
- console.log(description1); */
+console.log(description1); */
 
 
 // -------------------------------------------EJERCICIO 5------------------------------------------------------------------
@@ -155,7 +155,7 @@ if(population > 33){
 // 8. Reflect on
 
 // const numNeighbours = Number(prompt("How many neighbour countries does your conutry have?"));
- // if(numNeighbours == 1)console.log("Only 1 border!");
+// if(numNeighbours == 1)console.log("Only 1 border!");
 
 // if(numNeighbours === 1){
 //     console.log("Only 1 border!");
@@ -385,3 +385,42 @@ if(population > 33){
 //     describePopulation('Portugal', 10);
 //     describePopulation('China', 1441);
 //     describePopulation('USA', 332);
+
+
+// -------------------------------- ejercicio 16 ------------------------------------------
+
+
+// LECTURE: Introduction to Arrays
+// 1. Create an array containing 4 population values of 4 countries of your choice.
+// You may use the values you have been using previously. Store this array into a
+// variable called 'populations'
+// 2. Log to the console whether the array has 4 elements or not (true or false)
+// 3. Create an array called 'percentages' containing the percentages of the
+// world population for these 4 population values. Use the function
+// 'percentageOfWorld1' that you created earlier to compute the 4
+// percentage values
+
+// spain = 47
+// china = 1141
+// portugal = 10
+// USA = 332;
+
+function percentageOfPeople(population) {
+    return (population / 7900) * 100;
+}
+
+
+const populations = [47, 1141, 10, 332];
+
+console.log(populations.length === 4);
+
+
+
+const percentages = [
+    percentageOfPeople(populations[0]),
+    percentageOfPeople(populations[1]),
+    percentageOfPeople(populations[2]),
+    percentageOfPeople(populations[3])
+];
+
+console.log(percentages);
