@@ -405,22 +405,22 @@ if(population > 33){
 // portugal = 10
 // USA = 332;
 
-function percentageOfPeople(population) {
-    return (population / 7900) * 100;
-}
+// function percentageOfPeople(population) {
+//     return (population / 7900) * 100;
+// }
 
 
-const populations = [47, 1141, 10, 332];
+// const populations = [47, 1141, 10, 332];
 
-console.log(populations.length === 4);
+// console.log(populations.length === 4);
 
 
 
-const percentages = [
-    percentageOfPeople(populations[0]),
-    percentageOfPeople(populations[1]),
-    percentageOfPeople(populations[2]),
-    percentageOfPeople(populations[3])
-];
+// const percentages = [
+//     percentageOfPeople(populations[0]),
+//     percentageOfPeople(populations[1]),
+//     percentageOfPeople(populations[2]),
+//     percentageOfPeople(populations[3])
+// ];
 
-console.log(percentages);
+// console.log(percentages);
